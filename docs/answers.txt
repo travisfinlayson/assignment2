@@ -4,8 +4,10 @@ answers.txt
 
 Date of Git Lab tutorials: 10/3/2020
 Date of GitHub account creation:  4/8/2020
+username: travisfinlayson
+repository: https://github.com/travisfinlayson/assignment2
 
-
+CEN4020-Fall is a contributor and should have access.
 
 1.
 Create status.txt to track git status
