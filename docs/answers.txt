@@ -1,0 +1,78 @@
+Travis Finlayson
+THF17
+answers.txt
+
+Date of Git Lab tutorials: 10/3/2020
+Date of GitHub account creation:  4/8/2020
+
+
+
+1.
+Create status.txt to track git status
+ Committer: Travis Henry Finlayson <finlayso@linprog7.cs.fsu.edu>
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+
+2. There have been 9 commits done to the respository.  This number can be found
+in a couple of different ways.  The command 'git shortlog' will return the user
+as well as the number of commits from that user.   I made 3 commits and Estaban
+Parra made 6 commits.
+The command 'git rev-list --all --count' will return the number of commits made 
+on all branches of the repository: 9
+
+3.  I used 'git blame -- README.md' to show the time and modifications made to
+the README.md file.  The last modification was at 2020-10-04 14:05:39 by Travis 
+Finlayson.
+
+4. Creating a new branch allows developers to work on a project without changing 
+anything that was committed to the main branch.  This gives programmers the
+freedom to make changes without worrying about changing any code that other
+programmers are utilizing.
+Branches are also useful for working in parallel.  If two programmers create new
+branches then they can each work on a different component of the software
+simultaneously.  These branches can then later be merged together after their
+individual components are completed.
+
+5. 'git log' shows all of the commits that have been made on the current branch.
+'git status', on the other hand, describes what branch you are working on, where
+on the branch you are (in relation to the origin/master), and what file changes
+have been made that haven't been committed yet.
+
+6. To see the commits made that involve "Vehicle.h" I used the command 'git log
+-- Vehicle.h'
+
+7. Finding the word "file" in commit messages I used: 'git log --grep="file"'
+
+8. i. Inheritance means that one object or class is derived from another,
+retaining all of its attributes and methods.  Additional attributes and methods
+can be added to the derived class, but at its base, it must have all of the
+attributes and methods that the parent class has.
+ii. Polymorphism is ability of a method to do different things depending on the
+object that it is acting upon.  This means that the method of a parent object
+can be used on a child object but have a different implementation.
+iii. Encapsulation in OOP is the idea of bundling data and methods within a
+single object.  It is also used to hide sensitive information by making certain
+values and methods accessible only to the object itself and not to a user.
+Instead, users can change certain values by only using getter and setter methods that can
+be set to prevent data from being changed to illegal values.
+
+9. In the "Dictator and Lieutenants" workflow there are "lieutenant" repositories
+that each merge and resolve conflicts for some, but not all of the developers.  This
+is different than the "integration manager" which is a single repository that
+merges and resolves conflicts for ALL developers.
+
+10. In a "Centralized" workflow, each developer has to pull changes from the
+central repository and then resolve all conflicts themselves before pushing
+back.  If there are 100 people working on the same repository, this can get
+chaotic very quickly.  If everyone is pushing and pulling at the same time, then
+it is almost assured that conflicts will arise and developers will spend a much
+greater amount of time resolving those conflicts.  
+Using "Dictator and Lieutenants" workflow would be much better for a group of
+this size.  All changes would be pulled from a central repository, but any
+pushes would be made to the lieutenant repositories which would merge and
+resolve conflicts, and finally by the dictator repository which would merge and
+resolve conflicts pushed by the lieutenants.  The dictator would then push these
+changes back to the central repository. This would help ensure that developers
+are not trying to resolve conflicts themselves and that merges and conflict
+resolution are performed in a more organized fashion.
